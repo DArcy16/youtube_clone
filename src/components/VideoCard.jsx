@@ -20,15 +20,14 @@ const VideoCard = ({
 	},
 }) => {
 	return (
-		<Card sx={{ width: { xs: '100%', sm: '358px', md: '320px'}}}>
+		<Card sx={{ width: { xs: '92vw', sm: '320px'}}}>
 			<Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
 				<CardMedia
 					image={snippet?.thumbnails?.high?.url}
 					alt={snippet?.title}
 					sx={{ width: {
-						xs: '100%', 
-						sm : '358px',
-						md: '320px'
+						xs : '100%',
+						sm: '320px'
 					}, height: 180 }}
 				/>
 			</Link>
